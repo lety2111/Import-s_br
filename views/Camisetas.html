@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <title>Import´s_br</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../img/logo.png" class="brand-logo" onclick="VoltarHome()" alt="">
+        <ul class="nav-links">
+            <li class="nav-items"><a href="#">Sobre nós</a></li>
+           
+        </ul>
+        <div class="right-container">
+            <img src="../img/whats.png" class="logo-redes" alt="" onclick="AbreWhats()">
+        </div>
+        <div class="left-container">
+            <img src="../img/instagram.png" class="logo-redes" alt="" onclick="AbreInsta()">
+        </div>
+    </nav>
+    <div class="movies-list">
+        <div class="card-container">
+            <div class="card-catalogo">
+                <img src="" class="card-img" alt="" id="imgs">
+            </div> 
+            <div class="card-catalogo">
+                <h1 id="descricoes"></h1>
+                <div class="card-margin">
+                    <h1 id="Valores"></h1>
+                </div> 
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
+
+<script>
+
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+
+        var id = url.searchParams.get("id")
+    
+        
+
+        if (id == 1){
+            document.getElementById("descricoes").innerText = "Camisa Barcelona Away 21/22 s/n° Torcedor Nike"
+            document.getElementById("Valores").innerText = "R$65,00"
+            document.getElementById("imgs").src = "../img/Camisa Barcelona Roxo.jpg"
+        }
+        if (id == 2){
+            document.getElementById("descricoes").innerText = "Camisa Nike Brasil II 2022/23 Torcedor Pro Masculina"
+            document.getElementById("Valores").innerText = "R$65,00"
+            document.getElementById("imgs").src = "../img/Camisa Brasil azul II.jpg"
+        }
+        if (id == 3){
+            document.getElementById("descricoes").innerText = "Camisa Seleção Brasileira III 19/20 s/n° Torcedor Nike Masculina"
+            document.getElementById("Valores").innerText = "R$65,00"
+            document.getElementById("imgs").src = "img/Camisa Brasil frente II.jpg"
+        }
+        if (id == 4){
+            document.getElementById("descricoes").innerText = "Camisa Corinthians I 22/23 Branca - Masculina"
+            document.getElementById("Valores").innerText = "R$65,00"
+            document.getElementById("imgs").src = "img/Camisa Corinthians.jpg"
+        }
+        if (id == 5){
+            document.getElementById("descricoes").innerText = "Camisa Chelsea III 21/22 Azul e Preta - Nike - Masculina Torcedor"
+            document.getElementById("Valores").innerText = "R$65,00"
+            document.getElementById("imgs").src = "img/Camisa Chelsea.jpg"
+        }
+        if (id == 6){
+            document.getElementById("descricoes").innerText = "Camisa Seleção Brasileira 22/23 - Edição Especial Branca - Masculina"
+            document.getElementById("Valores").innerText = "R$65,00"
+            document.getElementById("imgs").src = "img/Camisa Brasil Branca.jpg"
+        }
+        if (id == 7){
+            document.getElementById("descricoes").innerText = "Camisa Brasil Polo 2022/23 Todos os Patrocínios - Amarela"
+            document.getElementById("Valores").innerText = "R$65,00"
+            document.getElementById("imgs").src = "img/Camisa Brasil amarela.jpg"
+        }
+        if (id == 8){
+            document.getElementById("descricoes").innerText = "Camisa Palmeiras"
+            document.getElementById("Valores").innerText = "R$65,00"
+            document.getElementById("imgs").src = "img/Camisa Palmeiras Verde.jpg"
+        }
+</script>
